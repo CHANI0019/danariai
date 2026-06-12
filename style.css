@@ -369,3 +369,30 @@ li {
     color: var(--accent-blue);
     margin-bottom: 0;
 }
+
+/* Terms of Service Modal Specific Styles */
+.tos-modal-content {
+    max-width: 900px;
+    width: 90%;
+    height: 85vh;
+    max-height: 85vh;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.tos-modal-content .modal-body {
+    flex-grow: 1;
+    height: calc(100% - 50px);
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.tos-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
