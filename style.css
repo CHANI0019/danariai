@@ -379,20 +379,40 @@ li {
     margin: 5vh auto;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 35px;
 }
 
 .tos-modal-content .modal-body {
     flex-grow: 1;
-    height: calc(100% - 50px);
-    margin-top: 15px;
-    overflow: hidden;
+    overflow-y: auto;
+    padding-right: 15px;
+    margin-top: 20px;
 }
 
-.tos-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 12px;
-    background-color: #ffffff;
+/* 팝업 내 텍스트 및 레이아웃 가독성 개선 */
+.tos-modal-content .modal-body h3 {
+    font-size: 1.15rem;
+    margin: 28px 0 12px 0;
+    color: var(--accent-blue);
+    font-weight: 700;
+}
+
+.tos-modal-content .modal-body p {
+    font-size: 0.98rem;
+    line-height: 1.75;
+    color: var(--text-dim);
+    margin-bottom: 12px;
+}
+
+.tos-modal-content .modal-body ul {
+    margin: 10px 0 20px 0;
+    padding-left: 0;
+}
+
+.tos-modal-content .modal-body li {
+    font-size: 0.98rem;
+    color: var(--text-dim);
+    border-left: 3px solid var(--accent-blue);
+    padding-left: 15px;
+    margin-bottom: 10px;
 }
