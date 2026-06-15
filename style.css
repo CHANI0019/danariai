@@ -370,8 +370,10 @@ li {
     margin-bottom: 0;
 }
 
-/* Terms of Service Modal Specific Styles */
-.tos-modal-content {
+/* Terms of Service, LBS & Privacy Policy Modal Specific Styles */
+.tos-modal-content,
+.lbs-modal-content,
+.privacy-modal-content {
     max-width: 900px;
     width: 90%;
     height: 85vh;
@@ -382,7 +384,9 @@ li {
     padding: 35px;
 }
 
-.tos-modal-content .modal-body {
+.tos-modal-content .modal-body,
+.lbs-modal-content .modal-body,
+.privacy-modal-content .modal-body {
     flex-grow: 1;
     overflow-y: auto;
     padding-right: 15px;
@@ -390,29 +394,67 @@ li {
 }
 
 /* 팝업 내 텍스트 및 레이아웃 가독성 개선 */
-.tos-modal-content .modal-body h3 {
+.tos-modal-content .modal-body h3,
+.lbs-modal-content .modal-body h3,
+.privacy-modal-content .modal-body h3 {
     font-size: 1.15rem;
     margin: 28px 0 12px 0;
     color: var(--accent-blue);
     font-weight: 700;
 }
 
-.tos-modal-content .modal-body p {
+.tos-modal-content .modal-body p,
+.lbs-modal-content .modal-body p,
+.privacy-modal-content .modal-body p {
     font-size: 0.98rem;
     line-height: 1.75;
     color: var(--text-dim);
     margin-bottom: 12px;
 }
 
-.tos-modal-content .modal-body ul {
+.tos-modal-content .modal-body ul,
+.lbs-modal-content .modal-body ul,
+.tos-modal-content .modal-body ol,
+.lbs-modal-content .modal-body ol,
+.privacy-modal-content .modal-body ul,
+.privacy-modal-content .modal-body ol {
     margin: 10px 0 20px 0;
     padding-left: 0;
 }
 
-.tos-modal-content .modal-body li {
+.tos-modal-content .modal-body li,
+.lbs-modal-content .modal-body li,
+.privacy-modal-content .modal-body li {
     font-size: 0.98rem;
     color: var(--text-dim);
     border-left: 3px solid var(--accent-blue);
     padding-left: 15px;
     margin-bottom: 10px;
+}
+
+.manager-info {
+    background-color: rgba(15, 23, 42, 0.4);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.manager-info h3 {
+    font-size: 1.1rem !important;
+    margin: 0 0 10px 0 !important;
+    color: var(--text-main) !important;
+}
+
+.manager-info ul {
+    margin: 0 !important;
+    padding-left: 0 !important;
+}
+
+.manager-info li {
+    border-left: none !important;
+    padding-left: 0 !important;
+    margin-bottom: 8px !important;
+    font-size: 0.95rem !important;
+    color: var(--text-dim) !important;
 }
